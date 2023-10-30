@@ -108,12 +108,12 @@ try:
     print(add_integer(None))
 except Exception as e:
     print(e)  # Output: a must be an integer
-
+```
 Requirements:
-
 Files: 0-add_integer.py, tests/0-add_integer.txt
-Task 1: Divide a Matrix
-Description: Write a function that divides all elements of a matrix. The function should have the following prototype:
+
+### Task 1: Divide a Matrix
+**Description:** Write a function that divides all elements of a matrix. The function should have the following prototype:
 
 def matrix_divided(matrix, div):
 
@@ -124,7 +124,7 @@ div can't be equal to 0; otherwise, raise a ZeroDivisionError exception with the
 All elements of the matrix should be divided by div and rounded to 2 decimal places.
 The function should return a new matrix.
 You are not allowed to import any module.
-
+```python
 **Example:**
 matrix = [
     [1, 2, 3],
@@ -133,14 +133,15 @@ matrix = [
 print(matrix_divided(matrix, 3))
 # Output:
 # [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+```
 
 Requirements:
 
 Files: 2-matrix_divided.py, tests/2-matrix_divided.txt
-Task 2: Say My Name
-Description: Write a function that prints "My name is <first name> <last name>." The function should have the following prototype:
+### Task 2: Say My Name
+**Description:** Write a function that prints "My name is <first name> <last name>." The function should have the following prototype:
 
-
+```python
 def say_my_name(first_name, last_name=""):
 first_name and last_name must be strings; otherwise, raise a TypeError exception with the message "first_name must be a string" or "last_name must be a string".
 The function should print "My name is <first name> <last name>."
@@ -151,11 +152,13 @@ say_my_name("John", "Doe")
 # Output: My name is John Doe
 say_my_name("John")
 # Output: My name is John
+
+```
 Requirements:
 
 Files: 3-say_my_name.py, tests/3-say_my_name.txt
-Task 3: Print Square
-Description: Write a function that prints a square with the character #. The function should have the following prototype:
+### Task 3: Print Square
+**Description:** Write a function that prints a square with the character #. The function should have the following prototype:
 
 
 def print_square(size):
@@ -174,10 +177,10 @@ print_square(4)
 Requirements:
 
 Files: 4-print_square.py, tests/4-print_square.txt
-Task 4: Text Indentation
-Description: Write a function that prints text with two new lines after each of these characters: ., ?, and :. The function should have the following prototype:
+### Task 4: Text Indentation
+**Description:** Write a function that prints text with two new lines after each of these characters: ., ?, and :. The function should have the following prototype:
 
-
+```python
 def text_indentation(text):
 text must be a string; otherwise, raise a TypeError exception with the message "text must be a string".
 There should be no space at the beginning or end of each printed line.
@@ -190,11 +193,13 @@ text_indentation(text)
 # Output:
 # This is a simple text.
 # But this text, is not so simple.
+```
 Requirements:
 
 Files: 5-text_indentation.py, tests/5-text_indentation.txt
-Task 5: Max Integer - Unittest
-Description: In this task, you will write test cases for the max_integer function from the 6-max_integer.py module. The max_integer function is intended to find and return the largest integer in a list of integers. You need to write test cases to ensure this function works correctly.
+
+### Task 5: Max Integer - Unittest
+**Description:** In this task, you will write test cases for the max_integer function from the 6-max_integer.py module. The max_integer function is intended to find and return the largest integer in a list of integers. You need to write test cases to ensure this function works correctly.
 
 Your test cases should be in a file named 6-max_integer_test.py inside the tests folder.
 The test cases should use the unittest module.
@@ -208,10 +213,11 @@ Your test cases should thoroughly check the behavior of the max_integer function
 Requirements:
 
 Files: 6-max_integer.py, tests/6-max_integer_test.py
-Task 6: Matrix Multiplication
-Description: Write a function that multiplies 2 matrices. The function should have the following prototype:
 
+### Task 6: Matrix Multiplication
+**Description:** Write a function that multiplies 2 matrices. The function should have the following prototype:
 
+```python
 def matrix_mul(m_a, m_b):
 m_a and m_b must be lists of lists of integers or floats.
 If m_a or m_b is not a list of lists, raise a TypeError exception with the message "m_a must be a list of lists" or "m_b must be a list of lists."
@@ -227,14 +233,17 @@ m_a = [[1, 2], [3, 4]]
 m_b = [[2, 0], [1, 2]]
 print(matrix_mul(m_a, m_b))
 # Output: [[4, 4], [10, 8]]
+
+```
 Requirements:
 
 Files: 100-matrix_mul.py, tests/100-matrix_mul.txt
-Task 7: Lazy Matrix Multiplication
-Description: Write a function that multiplies 2 matrices by using the NumPy module. The function should have the following prototype:
-
+### Task 7: Lazy Matrix Multiplication
+**Description:** Write a function that multiplies 2 matrices by using the NumPy module. The function should have the following prototype:
+```python
 
 def lazy_matrix_mul(m_a, m_b):
 m_a and m_b must be lists of lists of integers or floats.
 If m_a or m_b is not a list of lists, raise a TypeError exception with the message "m_a must be a list of lists" or "m_b must be a list of lists."
 If m_a or `
+```
