@@ -32,7 +32,7 @@ class Node:
         :param value: The new data to be stored in the node (must be an integer).
         :raises TypeError: If the provided value is not an integer.
         """
-        if not isinstance(value, int):
+        if type(value) != int:
             raise TypeError('data must be an integer')
         self.__data = value
 
@@ -103,7 +103,3 @@ class SinglyLinkedList():
             values.append(str(current.data))
             current = current.next_node
             return ('\n'.join(values))
-            
-
-            
-
