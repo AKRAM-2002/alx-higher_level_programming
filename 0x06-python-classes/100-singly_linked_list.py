@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+"""Class for Node"""
 class Node:
     """
     Class Node that defines a node of a singly linked list.
@@ -55,7 +57,7 @@ class Node:
             raise TypeError('next_node must be a Node object or None')
         self.__next_node = value
 
-
+""" class for SinglyLinkedList() """
 class SinglyLinkedList():
     """
     Implementation of a singly-linked list using Python classes.
