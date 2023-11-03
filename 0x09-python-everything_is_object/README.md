@@ -1,9 +1,5 @@
 # 0x09. Python - Everything is Object
 
-**Author:** Guillaume
-**Weight:** 1
-**Project Duration:** Oct 31, 2023, 4:00 AM - Nov 1, 2023, 4:00 AM
-
 ## Overview
 
 This project dives into the core concept that "everything is an object" in Python. It aims to improve your understanding of object types, memory allocation, variable behavior, and other fundamental aspects of Python. The project includes questions and tasks designed to enhance your grasp of Python's behavior with different types of objects, object mutability, references, and more.
