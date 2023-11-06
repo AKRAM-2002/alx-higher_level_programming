@@ -1,17 +1,5 @@
 # 0x0A. Python - Inheritance
 
-**Project By: Guillaume**
-
-**Weight: 1**
-
-**Project Start Date: Nov 6, 2023 4:00 AM**
-
-**Project End Date: Nov 7, 2023 4:00 AM**
-
-**Checker Release Date: Nov 6, 2023 10:00 AM**
-
-**Auto Review Deadline: Project deadline**
-
 ## Resources
 
 Read or watch:
@@ -105,7 +93,7 @@ You are not allowed to import any module
 
 ### 3.Same Class or inherit From
 - Write a function that returns True if the object is an instance of, or if the object is an instance of a class that inherited from, the specified class; otherwise False.
-````python
+```python
 Prototype: def is_kind_of_class(obj, a_class)
 You are not allowed to import any module
 ```
