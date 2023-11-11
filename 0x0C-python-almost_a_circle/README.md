@@ -62,7 +62,7 @@ python3 -m unittest discover tests
 
 ### Resources
 
-args/kwargs ("https://yasoob.me/2013/08/04/args-and-kwargs-in-python-explained/"
+[args/kwargs]("https://yasoob.me/2013/08/04/args-and-kwargs-in-python-explained/"
 JSON encoder and decoder
 unittest module
 Python test cheatsheet
