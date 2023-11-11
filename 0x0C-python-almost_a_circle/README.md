@@ -30,6 +30,7 @@ These instructions will help you set up the project on your local machine for de
    ```
 
 ### Project Structure
+```
 almost-a-circle/
 │
 ├── models/
@@ -50,7 +51,7 @@ almost-a-circle/
 ├── README.md
 ├── requirements.txt
 └── your_script.py
-
+```
 
 ### Running the Tests
 Ensure that you are in the project root directory and run the following command to execute all unit tests:
