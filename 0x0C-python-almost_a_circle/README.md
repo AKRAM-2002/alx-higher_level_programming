@@ -62,10 +62,10 @@ python3 -m unittest discover tests
 
 ### Resources
 
-[args/kwargs](https://yasoob.me/2013/08/04/args-and-kwargs-in-python-explained/)
-[JSON encoder and decoder](https://docs.python.org/3/library/json.html)
-[unittest module](https://docs.python.org/3.4/library/unittest.html#module-unittest)
-[Python test cheatsheet](https://www.pythonsheets.com/notes/python-tests.html)
+[args/kwargs](https://yasoob.me/2013/08/04/args-and-kwargs-in-python-explained/) </br>
+[JSON encoder and decoder](https://docs.python.org/3/library/json.html)</br>
+[unittest module](https://docs.python.org/3.4/library/unittest.html#module-unittest)</br>
+[Python test cheatsheet](https://www.pythonsheets.com/notes/python-tests.html)</br>
 
 ### Usage
 You can use the provided example script (your_script.py) as a starting point to interact with the implemented classes. Modify the script according to your needs.
