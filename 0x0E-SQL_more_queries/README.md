@@ -59,8 +59,3 @@ By the end of this project, you should be able to:
     - Script: 10-genre_id_by_show.sql
     - Lists all shows from hbtn_0d_tvshows with at least one linked genre, displaying title and genre_id.
 
-### Copyright - Plagiarism
-Remember not to copy and paste someone else's work. Plagiarism is strictly forbidden and will result in removal from the program.
-
-Have fun exploring advanced SQL queries and enhancing your database management skills! Good luck!
-
