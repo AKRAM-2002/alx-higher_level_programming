@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    Lists all State objects from the database hbtn_0e_6_usa
+  script that adds the State object “Louisiana” to the database
 """
 
 
@@ -19,13 +19,15 @@ if __name__ == "__main__":
     
     Base.metadata.create_all(engine)
 
+    
   
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    states = session.query(State).order_by(State.id)
-    for state in states:
-        print("{}: {}".format(state.id, state.name))
+    new_state = State(name="Louisiana")
+    session.add(new_state)
+    session.commit()
 
-   
+    print(new_state.id)
+
     session.close()

@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 """
-    Lists all State objects from the database hbtn_0e_6_usa
+    Prints all City objects from the database hbtn_0e_14_usa
 """
 
 
 if __name__ == "__main__":
     import sys
     from model_state import Base, State
+    from model_city import Base, City
 
     from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker
@@ -23,9 +24,11 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    states = session.query(State).order_by(State.id)
-    for state in states:
-        print("{}: {}".format(state.id, state.name))
 
-   
+    result = session.query(State, City.id, City).filter(
+        City.state_id == State.id).order_by(City.id).all()
+
+    for row in result:
+        print(f'{row.State.name}: ({row.id}) {row.City.name}')
+
     session.close()

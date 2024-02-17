@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    Lists all State objects from the database hbtn_0e_6_usa
+  Delete all State objects that contain the letter a from the database hbtn_0e_6_usa  
 """
 
 
@@ -23,9 +23,12 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    states = session.query(State).order_by(State.id)
-    for state in states:
-        print("{}: {}".format(state.id, state.name))
+    states_to_delete = session.query(State).filter(State.name.like('%a%'))
+    
+    for state in states_to_delete:
+        session.delete(state)
+
+    session.commit()
 
    
     session.close()

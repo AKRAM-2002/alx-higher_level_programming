@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    Lists all State objects from the database hbtn_0e_6_usa
+  script that changes the name of a State object from the database hbtn_0e_6_usa
 """
 
 
@@ -19,13 +19,18 @@ if __name__ == "__main__":
     
     Base.metadata.create_all(engine)
 
+    
   
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    states = session.query(State).order_by(State.id)
-    for state in states:
-        print("{}: {}".format(state.id, state.name))
+    state_to_update = session.query(State).filter_by(id=2).first()
 
-   
+    if(state_to_update is None):
+        print("Not Found")
+    else:
+        state_to_update.name = "New Mexico"
+        session.commit()
+        print(state_to_update.name)
+
     session.close()
